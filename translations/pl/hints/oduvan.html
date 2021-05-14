@@ -1,0 +1,44 @@
+<body data-author="oduvan">
+<div class="question-answer">
+    <div class="question">
+        Nie mam pojęcia od czego zacząć.
+    </div>
+    <div class="answer">
+        To proste! Wystarczy znaleźć długość ciągu znaków i sprawdzić czy jest większa niż 6.
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ok. To ma sens. Jak sprawdzić długość stringa?
+    </div>
+    <div class="answer">
+        Spróbuj skorzystać z wbudowanej funkcji <a href="https://docs.python.org/3/library/functions.html#len">len</a>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Dobrze. W jaki sposób mogę ją z czymś porównać?
+    </div>
+    <div class="answer">
+        <pre class="brush: python">
+len(password) > 6
+        </pre>
+        Ten kod zwróci True jeśli hasło będzie dłuższe niż 6 znaków.
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Chyba to już wszystko co muszę wiedzieć, ale wciąż nie do końca czaję jak to połączyć.
+    </div>
+    <div class="answer">
+        <pre class="brush: python">
+def is_acceptable_password(password: str) -> bool:
+    # your code here
+    return len(password) > 6
+        </pre>
+        Tak powinno wyglądać twoje rozwiązanie.
+    </div>
+</div>
+
+
+</body>
