@@ -18,11 +18,11 @@
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Wejście: </strong> String.
+    <strong>Wejście:</strong> String.
 </p>
 
 <p>
-    <strong>Wyjście: </strong> Bool. 
+    <strong>Wyjście:</strong> Bool. 
 </p>
 
 
@@ -32,16 +32,7 @@
         <strong>Przykład:</strong>
     </p>
 
-{% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">isAcceptablePassword('short') == false
-isAcceptablePassword('muchlonger') == true
-isAcceptablePassword('ashort') == false
-</pre>
-{% else %}
-<pre class="brush: python">is_acceptable_password('short') == False
-is_acceptable_password('muchlonger') == True
-</pre>
-{% endif %}
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 </div>
 
 

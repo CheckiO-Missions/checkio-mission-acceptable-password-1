@@ -18,11 +18,11 @@
 
 <!-- Explain input and output values -->
 <p>
-    <strong>入力: </strong> 文字列
+    <strong>入力:</strong> 文字列
 </p>
 
 <p>
-    <strong>出力: </strong> 真偽値
+    <strong>出力:</strong> 真偽値
 </p>
 
 
@@ -32,16 +32,7 @@
         <strong>例:</strong>
     </p>
 
-{% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">isAcceptablePassword('short') == false
-isAcceptablePassword('muchlonger') == true
-isAcceptablePassword('ashort') == false
-</pre>
-{% else %}
-<pre class="brush: python">is_acceptable_password('short') == False
-is_acceptable_password('muchlonger') == True
-</pre>
-{% endif %}
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 </div>
 
 
