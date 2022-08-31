@@ -1,4 +1,4 @@
-<body data-author="oduvan">
+<body data-author="freeman_lex">
 <div class="question-answer">
     <div class="question">
         I have no idea how to start solving this mission.
@@ -12,7 +12,7 @@
         Ok. It makes sense. How can I find the length then?
     </div>
     <div class="answer">
-        Try to use a built-in function <a href="https://docs.python.org/3/library/functions.html#len">len</a>
+        Try to use a built-in function <a target="_blank" href="https://docs.python.org/3/library/functions.html#len">len()</a>
     </div>
 </div>
 <div class="question-answer">
@@ -21,9 +21,9 @@
     </div>
     <div class="answer">
         <pre class="brush: python">
-len(password) > 6
+cond1 = len(password) > 6
         </pre>
-        Will return True in case of the password being bigger than 6.
+        Will return True in case of the password being bigger than 6, else False.
     </div>
 </div>
 <div class="question-answer">
@@ -33,12 +33,20 @@ len(password) > 6
     <div class="answer">
         <pre class="brush: python">
 def is_acceptable_password(password: str) -> bool:
-    # your code here
-    return len(password) > 6
+    
+    cond1 = len(password) > 6
+
+    return cond1
         </pre>
         That should be your solution.
     </div>
 </div>
-
-
+<div class="question-answer">
+    <div class="question">
+        Thanks! I know and understand more now! Everything works fine!
+    </div>
+    <div class="answer">
+        Glad to hear it! Try to solve the next one in series.
+    </div>
+</div>
 </body>
