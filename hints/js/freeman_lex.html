@@ -1,0 +1,56 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        <i>I have no idea how to start solving this mission.</i>
+    </div>
+    <div class="answer">
+        It’s simple! You need to find the length of a given string and check if it’s bigger than <b class="code">6</b>.
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <i>Ok. It makes sense. How can I find the length then?</i>
+    </div>
+    <div class="answer">
+        Try to use <a target="_blank" href="https://www.w3schools.com/jsref/jsref_length_string.asp">string.length</a> property.
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <i>OK. How can I compare it?</i>
+    </div>
+    <div class="answer">
+        <pre class="brush: javascript">
+const cond1 = password.length > 6;
+        </pre>
+        Will return <b class="code">true</b> in case of the password being bigger than <b class="code">6</b>, else <b class="code">false</b>.
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <i>That should be it. However, I still can't put everything together.</i>
+    </div>
+    <div class="answer">
+        <pre class="brush: javascript">
+import assert from "assert";
+
+
+function isAcceptablePassword(password: string): boolean {
+    
+    const cond1 = password.length > 6;
+    
+    return cond1;
+}
+        </pre>
+        That should be your solution.
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <i>Thanks! I know and understand more now! Everything works fine!</i>
+    </div>
+    <div class="answer">
+        Glad to hear it! Try to solve the <a href="https://js.checkio.org/en/mission/acceptable-password-ii/">next one</a> in series.
+    </div>
+</div>
+</body>
