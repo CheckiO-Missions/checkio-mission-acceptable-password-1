@@ -12,7 +12,7 @@
         <i>Добре. Це має сенс. Як мені знайти довжину?</i>
     </div>
     <div class="answer">
-        <p>Спробуй використати вбудовану функцію <a target="_blank" href="https://docs.python.org/3/library/functions.html#len">len(str)</a></p>
+        <p>Спробуй використати атрибут <a target="_blank" href="https://www.w3schools.com/jsref/jsref_length_string.asp">string.length</a>.</p>
     </div>
 </div>
 <div class="question-answer">
@@ -20,10 +20,10 @@
         <i>Використав. А як зробити порівняння?</i>
     </div>
     <div class="answer">
-        <pre class="brush: python">
-cond1 = len(password) > 6
+        <pre class="brush: javascript">
+const cond1 = password.length > 6;
         </pre>
-        <p>Змінна матиме значення <b class="code">True</b> у випадку якщо довжина пароля більше <b class="code">6</b>, а інакше <b class="code">False</b>.</p>
+        <p>Змінна матиме значення <b class="code">true</b> у випадку якщо довжина пароля більше <b class="code">6</b>, а інакше <b class="code">false</b>.</p>
     </div>
 </div>
 <div class="question-answer">
@@ -31,12 +31,16 @@ cond1 = len(password) > 6
         <i>Так, це має бути воно! Тим не менше, я все ще не розумію, як це звести докупи.</i>
     </div>
     <div class="answer">
-        <pre class="brush: python">
-def is_acceptable_password(password: str) -> bool:
-    
-    cond1 = len(password) > 6
+        <pre class="brush: javascript">
+import assert from "assert";
 
-    return cond1
+
+function isAcceptablePassword(password: string): boolean {
+    
+    const cond1 = password.length > 6;
+    
+    return cond1;
+}
         </pre>
         <p>Таким має бути твоє остаточне рішення.</p>
     </div>
@@ -46,7 +50,7 @@ def is_acceptable_password(password: str) -> bool:
         <i>Дякую! Тепер я знаю і розумію більше! Все працює як слід!</i>
     </div>
     <div class="answer">
-        <p>👍 Приємно це чути! Спробуй розв'язати <a target="_blank" href="https://py.checkio.org/en/mission/acceptable-password-ii/">наступну</a> у серії.</p>
+        <p>👍 Приємно це чути! Спробуй розв'язати <a target="_blank" href="https://js.checkio.org/en/mission/acceptable-password-ii/">наступну</a> у серії.</p>
     </div>
 </div>
 </body>

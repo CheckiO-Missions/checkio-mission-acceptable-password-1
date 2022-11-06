@@ -12,7 +12,7 @@
         <i>Ok. It makes sense. How can I find the length then?</i>
     </div>
     <div class="answer">
-        <p>Try to use a built-in function <a target="_blank" href="https://docs.python.org/3/library/functions.html#len">len(str)</a></p>
+        <p>Try to use <a target="_blank" href="https://www.w3schools.com/jsref/jsref_length_string.asp">string.length</a> property.</p>
     </div>
 </div>
 <div class="question-answer">
@@ -20,10 +20,10 @@
         <i>OK. How can I compare it?</i>
     </div>
     <div class="answer">
-        <pre class="brush: python">
-cond1 = len(password) > 6
+        <pre class="brush: javascript">
+const cond1 = password.length > 6;
         </pre>
-        <p>Will return <b class="code">True</b> in case of the password being bigger than <b class="code">6</b>, else <b class="code">False</b>.</p>
+        <p>Will return <b class="code">true</b> in case of the password being bigger than <b class="code">6</b>, else <b class="code">false</b>.</p>
     </div>
 </div>
 <div class="question-answer">
@@ -31,12 +31,16 @@ cond1 = len(password) > 6
         <i>That should be it. However, I still can't put everything together.</i>
     </div>
     <div class="answer">
-        <pre class="brush: python">
-def is_acceptable_password(password: str) -> bool:
-    
-    cond1 = len(password) > 6
+        <pre class="brush: javascript">
+import assert from "assert";
 
-    return cond1
+
+function isAcceptablePassword(password: string): boolean {
+    
+    const cond1 = password.length > 6;
+    
+    return cond1;
+}
         </pre>
         <p>That should be your solution.</p>
     </div>
@@ -46,7 +50,7 @@ def is_acceptable_password(password: str) -> bool:
         <i>Thanks! I know and understand more now! Everything works fine!</i>
     </div>
     <div class="answer">
-        👍 Glad to hear it! Try to solve the <a target="_blank" href="https://py.checkio.org/en/mission/acceptable-password-ii/">next one</a> in series.
+        <p>👍 Glad to hear it! Try to solve the <a target="_blank" href="https://js.checkio.org/en/mission/acceptable-password-ii/">next one</a> in series.</p>
     </div>
 </div>
 </body>
