@@ -20,12 +20,12 @@ TESTS = {
         {
             "input": ["ashort"],
             "answer": False
-        }
+        },
     ],
     "Extra": [
         {
             "input": ["this is password"],
             "answer": True
-        }
+        },
     ]
 }
