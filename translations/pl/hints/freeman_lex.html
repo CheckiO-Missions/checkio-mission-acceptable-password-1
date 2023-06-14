@@ -1,0 +1,54 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        <p>Nie mam pojęcia, jak zacząć rozwiązywać tę misję.</p>
+    </div>
+    <div class="answer">
+        <p>to proste! Musi Pan znaleźć długość danego ciągu i sprawdzić, czy jest ona większa niż <b class="code">6</b>.</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Ok. To ma sens. Jak zatem mogę znaleźć długość?</p>
+    </div>
+    <div class="answer">
+        <p>Proszę spróbować użyć wbudowanej funkcji <a target="_blank" href="https://docs.python.org/3/library/functions.html#len">len(str)</a></p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>OK. Jak mogę to porównać?</p>
+    </div>
+    <div class="answer">
+        <pre class="brush: python">
+cond1 = len(password)> 6
+        </pre>
+        <p>Zwróci <b class="code">True</b> w przypadku, gdy hasło jest większe niż <b class="code">6</b>, w przeciwnym razie <b class="code">False</b>.</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>To powinno wystarczyć. Jednak nadal nie mogę połączyć wszystkiego razem.</p>
+    </div>
+    <div class="answer">
+        <div class="spoiler">
+        <pre class="brush: python">
+def is_acceptable_password(password: str) -> bool:
+    
+    cond1 = len(password)> 6
+
+    return cond1
+        </pre>
+        </div>
+        <p>To powinno być Pana rozwiązanie.</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Dzięki! Teraz wiem i rozumiem więcej! Wszystko działa jak należy!</p>
+    </div>
+    <div class="answer">
+        miło mi to słyszeć! Proszę spróbować rozwiązać <a target="_blank" href="https://py.checkio.org/en/mission/acceptable-password-ii/">next one</a> szeregowo.
+    </div>
+</div>
+</body>
