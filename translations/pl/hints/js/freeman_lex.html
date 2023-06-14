@@ -1,0 +1,58 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        <p>Nie mam pojęcia, jak zacząć rozwiązywać tę misję.</p>
+    </div>
+    <div class="answer">
+        <p>to proste! Musi Pan znaleźć długość danego ciągu i sprawdzić, czy jest ona większa niż <b class="code">6</b>.</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Ok. To ma sens. Jak zatem mogę znaleźć długość?</p>
+    </div>
+    <div class="answer">
+        <p>Proszę spróbować użyć właściwości <a target="_blank" href="https://www.w3schools.com/jsref/jsref_length_string.asp">string.length</a>.</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>OK. Jak mogę to porównać?</p>
+    </div>
+    <div class="answer">
+        <pre class="brush: javascript">
+const cond1 = password.length> 6;
+        </pre>
+        <p>Zwróci <b class="code">true</b> w przypadku hasła większego niż <b class="code">6</b>, w przeciwnym razie <b class="code">false</b>.</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>To powinno wystarczyć. Jednak nadal nie mogę połączyć wszystkiego razem.</p>
+    </div>
+    <div class="answer">
+        <div class="spoiler">
+        <pre class="brush: javascript">
+import assert from "assert";
+
+
+function isAcceptablePassword(password: string): boolean {
+    
+    const cond1 = password.length> 6;
+    
+    return cond1;
+}
+        </pre>
+        </div>
+        <p>To powinno być Pana rozwiązanie.</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Dzięki! Teraz wiem i rozumiem więcej! Wszystko działa jak należy!</p>
+    </div>
+    <div class="answer">
+        <p>miło mi to słyszeć! Proszę spróbować rozwiązać <a target="_blank" href="https://js.checkio.org/en/mission/acceptable-password-ii/">next one</a> szeregowo.</p>
+    </div>
+</div>
+</body>
