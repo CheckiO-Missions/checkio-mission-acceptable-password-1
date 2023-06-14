@@ -18,11 +18,11 @@
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Input:</strong> A <span translate="repeat">string</span>.
+    <strong>Input:</strong> A {% if is_js %}<span translate="repeat">string</span>{% else %}string <span translate="no">(str)</span>{% endif %}.
 </p>
 
 <p>
-    <strong>Output:</strong> A <span translate="repeat">bool</span>. 
+    <strong>Output:</strong> A {% if is_js %}<span translate="repeat">boolean</span>{% else %}boolean <span translate="no">(bool)</span>{% endif %}. 
 </p>
 
 
