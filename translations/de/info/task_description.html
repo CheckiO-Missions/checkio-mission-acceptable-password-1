@@ -1,0 +1,44 @@
+<!-- Describe task in general -->
+
+<img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
+
+<p>
+    <i>Sie befinden sich am Anfang einer Passwortserie. Jede Mission baut auf der vorhergehenden auf. Die folgenden Missionen werden etwas komplexer.</i>
+</p>
+
+<p> 
+    In dieser Mission müssen Sie eine Funktion zur Überprüfung des Passworts erstellen.
+</p>
+
+<p>Die Bedingung für die Überprüfung ist:</p>
+
+<ul>
+    <li>die Länge sollte größer als 6 sein.</li>
+</ul>
+
+
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> A {% if is_js %}string{% else %} string <span>(str)</span>{% endif %}.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> A {% if is_js %}logischer Wert <span>(boolean)</span>{% else %} logischer Wert <span>(bool)</span>{% endif %}. 
+</p>
+
+
+<!-- Give some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Beispiele:</strong>
+    </p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
+
+<p class="for_info_only">
+    <strong>Wie es verwendet wird: </strong>
+    <i>Für ein Formular zur Passwortüberprüfung. Es ist auch gut zu wissen, wie die Aufgabe ausgewertet werden kann.</i>
+</p>
