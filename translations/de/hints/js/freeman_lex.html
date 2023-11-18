@@ -1,0 +1,58 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        <p>Ich habe keine Ahnung, wie ich diese Mission lösen soll.</p>
+    </div>
+    <div class="answer">
+        <p>💡 Es ist ganz einfach! Sie müssen die Länge einer gegebenen Zeichenkette ermitteln und prüfen, ob sie größer ist als <b class="code">6</b>.</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Ok. Das macht Sinn. Wie kann ich dann die Länge herausfinden?</p>
+    </div>
+    <div class="answer">
+        <p>Versuchen Sie, die Eigenschaft <a target="_blank" href="https://www.w3schools.com/jsref/jsref_length_string.asp">string.length</a> zu verwenden.</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>GUT. Wie kann ich sie vergleichen?</p>
+    </div>
+    <div class="answer">
+        <pre class="brush: javascript">
+const cond1 = password.length> 6;
+        </pre>
+        <p>Gibt <b class="code">true</b> zurück, wenn das Kennwort größer als <b class="code">6</b> ist, sonst <b class="code">false</b>.</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Das sollte es sein. Aber ich kann immer noch nicht alles zusammensetzen.</p>
+    </div>
+    <div class="answer">
+        <div class="spoiler">
+        <pre class="brush: javascript">
+import assert from "assert";
+
+
+function isAcceptablePassword(password: string): boolean {
+    
+    const cond1 = password.length> 6;
+    
+    return cond1;
+}
+        </pre>
+        </div>
+        <p>Das sollte Ihre Lösung sein.</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Vielen Dank! Ich weiß und verstehe jetzt mehr! Alles funktioniert bestens!</p>
+    </div>
+    <div class="answer">
+        <p>👍 Freut mich zu hören! Versuchen Sie, die <a target="_blank" href="https://js.checkio.org/en/mission/acceptable-password-ii/">next one</a> in Serie zu lösen.</p>
+    </div>
+</div>
+</body>
