@@ -1,0 +1,54 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        <p>Я не знаю, как решить эту задачу.</p>
+    </div>
+    <div class="answer">
+        <p>💡 Это просто! Вам нужно найти длину заданной строки и проверить, что она больше, чем <b class="code">6</b>.</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Хорошо. Это логично. Как я могу найти длину строки?</p>
+    </div>
+    <div class="answer">
+        <p>Попробуйте использовать встроенную функцию <a target="_blank" href="https://docs.python.org/3/library/functions.html#len">len(str)</a></p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Хорошо. Как мне её сравнить?</p>
+    </div>
+    <div class="answer">
+        <pre class="brush: python">
+cond1 = len(password) > 6
+        </pre>
+        <p>вернёт <b class="code">True</b>, если пароль длиннее <b class="code">6</b> символов, а иначе <b class="code">False</b>.</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Так и должно быть. Однако, я всё ещё не могу сложить всё это вместе.</p>
+    </div>
+    <div class="answer">
+        <div class="spoiler">
+        <pre class="brush: python">
+def is_acceptable_password(password: str) -> bool:
+    
+    cond1 = len(password) > 6
+
+    return cond1
+        </pre>
+        </div>
+        <p>Таким должно быть ваше решение.</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Спасибо! Теперь я знаю и понимаю больше! Всё работает отлично!</p>
+    </div>
+    <div class="answer">
+        👍 Рад слышать! Попробуйте решить <a target="_blank" href="https://py.checkio.org/en/mission/acceptable-password-ii/">следующую задачу</a> из этой серии.
+    </div>
+</div>
+</body>
